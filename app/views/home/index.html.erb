@@ -1,5 +1,5 @@
-<%= image_tag @image_url, :alt => 'djz image', :class => 'djz-image' %>
 <%= audio_tag @audio_url, :autoplay => true, :class => 'audio-stream' %>
+<%= image_tag @image_url, :alt => 'djz image', :class => 'djz-image' %>
 
 <script>
   // TODO: There should be a better way to do this
@@ -17,7 +17,7 @@
 
         $('.djz-image').attr('src', item.imageUrl)
         $('body').attr('bgcolor', item.bgcolor);
-      }, 10);
+      }, 300);
     });
   };
  
