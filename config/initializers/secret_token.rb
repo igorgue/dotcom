@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Igorguedotcom::Application.config.secret_key_base = '0155eb247709eedade8b434ce8482ee3eb5afb106fe709a930060ad43db6ac3b6c5cd95860fcbf9403144393051949ac5107ee87095897d0ee653513f73bef47'
+Dotcom::Application.config.secret_key_base = '0155eb247709eedade8b434ce8482ee3eb5afb106fe709a930060ad43db6ac3b6c5cd95860fcbf9403144393051949ac5107ee87095897d0ee653513f73bef47'

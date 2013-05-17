@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Igorguedotcom::Application.config.session_store :cookie_store, key: '_igorguedotcom_session'
+Dotcom::Application.config.session_store :cookie_store, key: '_dotcom_session'

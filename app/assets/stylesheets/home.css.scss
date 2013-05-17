@@ -1,0 +1,23 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content {
+  position: relative;
+}
+
+.djz-image {
+  position: absolute;
+
+  width: 1024px;
+  height: 1024px;
+
+  left: 50%;
+  top: 50%;
+
+  margin: 64px 0 0 -512px;
+}
+
+.audio-stream {
+  display: none;
+}

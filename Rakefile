@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Igorguedotcom::Application.load_tasks
+Dotcom::Application.load_tasks

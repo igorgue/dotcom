@@ -1,0 +1,28 @@
+<%= image_tag @image_url, :alt => 'djz image', :class => 'djz-image' %>
+<%= audio_tag @audio_url, :autoplay => true, :class => 'audio-stream' %>
+
+<script>
+  // TODO: There should be a better way to do this
+  // Globals
+  window.bgcolor = '<%= @bgcolor %>';
+  window.allColors = null;
+
+  // Random change pic
+  window.randomColor = function() {
+    $.getJSON('/colors.json', function(data) {
+      window.allColors = data;
+
+      setInterval(function() {
+        var item = window.allColors[Math.floor(Math.random() * window.allColors.length)];
+
+        $('.djz-image').attr('src', item.imageUrl)
+        $('body').attr('bgcolor', item.bgcolor);
+      }, 10);
+    });
+  };
+ 
+  $(document).ready(function() {
+    $('body').attr('bgcolor', bgcolor);
+    randomColor();
+  });
+</script>
